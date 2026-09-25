@@ -1,13 +1,13 @@
 {
   "name": "zotero-tag-editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "license": "MIT",
   "engines": {
     "node": ">=22"
   },
-  "description": "A Zotero 10 plugin for editing tags on one or more selected items.",
+  "description": "批量添加、移除或重命名所选文献条目的标签。",
   "scripts": {
     "clean": "node scripts/clean.mjs",
     "typecheck": "tsc --noEmit",

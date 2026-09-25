@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Zotero Tag Editor",
-  "version": "1.0.0",
-  "description": "Batch add, remove, and rename tags on selected Zotero items.",
+  "version": "1.0.1",
+  "description": "批量添加、移除或重命名所选文献条目的标签。",
   "author": "lllaterOn",
   "homepage_url": "https://github.com/lllaterOn/zotero-tag-editor",
   "icons": {
