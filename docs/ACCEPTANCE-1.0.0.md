@@ -2,6 +2,17 @@
 
 维护者已在本地试用阶段确认功能完整，并于 2026-09-25 授权以现有功能正式发布 v1.0.0、采用 MIT、启用公开自动更新。此次不再增加功能。
 
+## 本次结果
+
+2026-09-25 已完成正式发布，下载的原始 Draft 安装包与正式资产完全一致，SHA-256 为 `ea67ee5d095edf25496abda856e6b8d62b690762879d0ea07164a16e4c639c2b`。
+
+- [发布准备 PR #1](https://github.com/lllaterOn/zotero-tag-editor/pull/1) 与 [CI](https://github.com/lllaterOn/zotero-tag-editor/actions/runs/36089628949) 通过；[Draft 构建](https://github.com/lllaterOn/zotero-tag-editor/actions/runs/36089716339) 完成。
+- 本地完整 verify 的 16 项测试、安装与资产校验及跨时区可重复构建通过；实际 XHTML 的 9 组浏览器检查通过。
+- 下载的正式候选 XPI 在隔离 Zotero 10.0.3 中加载、Ctrl+T 呼出、切换目标、保留或丢弃草稿、快捷键设置、保存和再次打开撤销均通过，未触及日常文献库。原生自动检查用预设确认返回值覆盖草稿切换的两个分支，真实对话框接受/取消交互由浏览器测试覆盖。
+- [v1.0.0 Release](https://github.com/lllaterOn/zotero-tag-editor/releases/tag/v1.0.0) 已发布；[publish-update](https://github.com/lllaterOn/zotero-tag-editor/actions/runs/36089815218) 成功，正式资产重新下载校验通过。更新清单包含同一摘要与固定版本下载地址。
+
+## 验证范围
+
 自动验证包括 TypeScript、16 项领域与运行时测试、清单字段、仓库卫生、XPI 内容、发布资产和跨时区可重复构建。浏览器检查使用实际 XHTML 与模拟桥接，覆盖增删改、草稿、冲突、目标切换、快捷键和布局；这些检查不等于原生验收。
 
 原生验证使用 Windows 上的 Zotero 10.0.3，独立配置及测试数据库，检查正式资产的加载、菜单、Ctrl+T、原有标签显示、快捷键录入、重新选择后在同一窗口切换、取消切换保留草稿、接受切换清除草稿、保存及再次打开撤销。用户日常文献库不参与测试。
