@@ -12,6 +12,17 @@
               "strict_max_version": "10.*"
             }
           }
+        },
+        {
+          "version": "1.0.1",
+          "update_link": "https://github.com/lllaterOn/zotero-tag-editor/releases/download/v1.0.1/zotero-tag-editor-1.0.1.xpi",
+          "update_hash": "sha256:e060649f517be617fafcc707d511b7aa78383ced5a1a4aee1e27ec7076abd6a7",
+          "applications": {
+            "zotero": {
+              "strict_min_version": "10.0.3",
+              "strict_max_version": "10.*"
+            }
+          }
         }
       ]
     }
