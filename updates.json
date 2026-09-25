@@ -1,7 +1,19 @@
 {
   "addons": {
     "zotero-tag-editor@lllateron": {
-      "updates": []
+      "updates": [
+        {
+          "version": "1.0.0",
+          "update_link": "https://github.com/lllaterOn/zotero-tag-editor/releases/download/v1.0.0/zotero-tag-editor-1.0.0.xpi",
+          "update_hash": "sha256:ea67ee5d095edf25496abda856e6b8d62b690762879d0ea07164a16e4c639c2b",
+          "applications": {
+            "zotero": {
+              "strict_min_version": "10.0.3",
+              "strict_max_version": "10.*"
+            }
+          }
+        }
+      ]
     }
   }
 }
