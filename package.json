@@ -1,0 +1,29 @@
+{
+  "name": "zotero-tag-editor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "description": "A Zotero 10 plugin for editing tags on one or more selected items.",
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/test.mjs",
+    "verify:repository": "node scripts/verify-repository.mjs",
+    "verify:update-manifest": "node scripts/verify-update-manifest.mjs",
+    "build": "node scripts/build.mjs",
+    "verify:deterministic": "node scripts/verify-deterministic.mjs",
+    "verify:package": "node scripts/verify-package.mjs",
+    "verify:install-manifest": "node scripts/verify-install-manifest.mjs",
+    "verify": "npm run typecheck && npm run test && npm run verify:repository && npm run verify:install-manifest && npm run verify:update-manifest && npm run build && npm run verify:package && npm run verify:deterministic"
+  },
+  "devDependencies": {
+    "@types/node": "24.3.1",
+    "esbuild": "0.25.9",
+    "fflate": "0.8.3",
+    "typescript": "5.9.2"
+  }
+}
